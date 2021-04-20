@@ -31,15 +31,14 @@
 
                 <div class="flex px-3 pb-4 space-x-4">
                     <form action="{{ route('news.edit', $newsEntry->slug) }}">
-                        <button type="submit" class="px-2 py-1 text-sm bg-green-500 rounded">Edit</button>
+                        <button type="submit" class="px-3 py-2 text-sm bg-green-500 rounded">Edit</button>
                     </form>
 
                     <form method="POST" action="{{ route('news.delete', $newsEntry) }}">
                         @csrf
-
-
-                        <button type="submit" class="px-2 py-1 text-sm bg-red-500 rounded">Delete</button>
+                        <button type="submit" class="px-3 py-2 text-sm bg-red-500 rounded">Delete</button>
                     </form>
+
                 </div>
             @endforeach
         </div>

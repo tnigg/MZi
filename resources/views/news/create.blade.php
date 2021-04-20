@@ -27,8 +27,8 @@
                             <button class="px-2 py-1 bg-blue-400 rounded">Submit</button>
                         </div>
                         <div class="px-3 py-2 mb-2">
-                            <button class="px-2 py-1 bg-gray-400 rounded">
-                                Go Back</button>
+                            <a class="block px-2 py-1 bg-gray-400 rounded" href="{{ route('news.index') }}">Go
+                                Back</a>
                         </div>
                     </div>
                 </form>
